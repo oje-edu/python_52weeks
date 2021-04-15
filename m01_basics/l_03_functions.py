@@ -35,7 +35,7 @@ def create_devices(num_devices=1, num_subnets=1):
             elif device["vendor"] == "arista":
                 device["os"] = "eos"
                 device["version"] = choice(["2.45", "2.55", "2.92.145", "3.01"])
-            device["ip"] = "10.0.0." + str(subnet_index) + "." + str(device_index)
+            device["ip"] = "10.0." + str(subnet_index) + "." + str(device_index)
 
             created_devices.append(device)
     return created_devices
