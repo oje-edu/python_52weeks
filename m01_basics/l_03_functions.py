@@ -20,7 +20,7 @@ def create_devices(num_devices=1, num_subnets=1):
 
             # RANDOM DEVICE NAME
             device["name"] = (
-                    choice(["r2", "r4", "no4", "r10"])
+                    choice(["IHK", "BRD", "no4", "r10"])
                     + choice(["L", "U"])
                     + choice(string.ascii_letters)
             )
