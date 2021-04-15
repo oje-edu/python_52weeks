@@ -1,3 +1,4 @@
-# 52 - weeks of python
+# I started to learn
 
-based on [52weeks](https://my.thisisit.io/p/52-weeks-of-python)
+[52 weeks](https://my.thisisit.io/p/52-weeks-of-python) of python - a free course from and with [@chuckablack](https://twitter.com/chuckablack)
+
