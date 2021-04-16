@@ -1,11 +1,6 @@
 from random import choice
 import string
-from tabulate import tabulate
 
-# FUNCTION WITHOUT DEFAULT VALUES
-# def create_devices(num_devices, num_subnets):
-
-# WITH DEFAULT VALUES (SO YOU CAN SPECIFY ONLY ONE PARAMETER)
 def create_devices(num_devices=1, num_subnets=1):
     # CREATE LIST OF DEVICES
     created_devices = list()
@@ -42,15 +37,3 @@ def create_devices(num_devices=1, num_subnets=1):
 
             created_devices.append(device)
     return created_devices
-
-
-# -- MAIN PROGRAM --
-if __name__ == '__main__':
-
-    # POSITIONAL ARGUMENT
-    # devices = create_devices(4, 5)
-
-    # same as above but WITH KEYWORD ( so the order in the call does't matter)
-    devices = create_devices(num_devices=4, num_subnets=5)
-
-    print("\n", tabulate(devices, headers="keys"))
