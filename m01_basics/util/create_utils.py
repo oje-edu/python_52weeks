@@ -75,3 +75,17 @@ def create_network(num_devices=1, num_subnets=1):
             interfaces.append(interface)
     return network
 
+def create_devices_gen(num_devices=1, num_subnets=1):
+
+    if num_devices > 254 or num_subnets > 254:
+        print("Error: too many devices and/or subnets requested")
+        return None
+
+    print("beginning device creation")
+    for subnet_index in range(1, num_subnets + 1):
+
+        for device_index in range(1, num_devices + 1):
+            device = create_device(device_index, subnet_index)
+            # no return for generator
+            yield device
+
