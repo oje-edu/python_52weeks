@@ -1,5 +1,5 @@
 device_str = "   r3-L-n7, cisco, cataclyst 2960, ios , extra stupid stuff "
-#NOTE: To make this string iterable using split(",") - so everything after a comma is separate word
+# NOTE: To make this string iterable using split(",") - so everything after a comma is separate word
 
 # NON LIST COMPREHENSION WAY
 device = list()
@@ -39,7 +39,7 @@ device_info_str = "name:r3-L-n7, vendor:cisco, model:cataclyst 2960, os:ios, ver
 
 # LIST THEN DICT COMPREHENSION FROM STRING
 device_info_pairs = [kv_pair.split(":") for kv_pair in device_info_str.split(",")]
-devide = {item[0]: item[1] for item in device_info_pairs}
+device = {item[0]: item[1] for item in device_info_pairs}
 print("\ndevice using list and dict comprehension:\n\t\t", device)
 print("device nicely formatted:")
 for key, value in device.items():

@@ -25,6 +25,8 @@ from enum import Enum
 
 # ENUM: use class name and enum, which has 'name and 'value' attributes
 #             e.g. Vendor.CISCO.name or Vendor.CISCO.value
+
+
 class Vendor(Enum):
     CISCO = "cisco"
     JUNIPER = "juniper"
@@ -58,7 +60,6 @@ for index in range(20):
     #     device["os"] = "eos"
     #     device["version"] = choice(["2.45", "2.55", "2.92.145", "3.01"])
 
-
     # USING CONSTANTS: RANDOM VENDOR FROM CHOICE OF CISCO, JUNIPER, ARISTA
     # device["vendor"] = choice([CISCO, JUNIPER, ARISTA])
     # if device["vendor"] == CISCO:
@@ -70,7 +71,6 @@ for index in range(20):
     # elif device["vendor"] == ARISTA:
     #     device["os"] = "eos"
     #     device["version"] = choice(["2.45", "2.55", "2.92.145", "3.01"])
-
 
     # USING CLASS: RANDOM VENDOR FROM CHOICE OF CISCO, JUNIPER, ARISTA
     # device["vendor"] = choice([Vendor.CISCO, Vendor.JUNIPER, Vendor.ARISTA])
@@ -123,5 +123,6 @@ for index in range(20):
 
     sorted_devices = sorted(devices, key=itemgetter("vendor", "os", "version"))
     print(tabulate(sorted_devices, headers="keys"))
-    # -> "short/geek" version: print(tabulate(sorted(devices, key=itemgetter("vendor", "os", "version")), headers="keys"))
+    # -> "short/geek" version: print(tabulate(sorted(devices, key=itemgetter("vendor", "os", "version")),
+    # headers="keys"))
 

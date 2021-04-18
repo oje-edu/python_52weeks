@@ -6,6 +6,8 @@ from tabulate import tabulate
 # def create_devices(num_devices, num_subnets):
 
 # WITH DEFAULT VALUES (SO YOU CAN SPECIFY ONLY ONE PARAMETER)
+
+
 def create_devices(num_devices=1, num_subnets=1):
     # CREATE LIST OF DEVICES
     created_devices = list()
