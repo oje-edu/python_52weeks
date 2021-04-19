@@ -1,0 +1,36 @@
+[
+    {
+        "N ": "--------------------------------------",
+        "OT": "# FILE GENERATED  BY l_00_inventory.py",
+        "E ": "--------------------------------------"
+    },
+    {
+        "name": "devnet-csr-allways-on-sandbox",
+        "ssh-info": {
+            "hostname": "ios-ce-mgmt-latest-cisco.com",
+            "port": 8181,
+            "credentials": {
+                "username": "developer",
+                "password": "C1sco12345"
+            },
+            "device_type": "cisco_ios"
+        },
+        "netconf-info": {
+            "port": 10000
+        },
+        "restconf-info": {
+            "port": 9443
+        }
+    },
+    {
+        "name": "devnet-csr-always-on-sandbox",
+        "ssh-info": {
+            "hostname": "sbx-nxos-mgmt.cisco.com",
+            "port": 8181,
+            "credentials": {
+                "username": "admin",
+                "password": "Admin_1234!"
+            }
+        }
+    }
+]
