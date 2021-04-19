@@ -48,6 +48,7 @@ def create_devices(num_devices=1, num_subnets=1):
     print("completed device creation")
     return created_devices
 
+
 def create_network(num_devices=1, num_subnets=1):
     devices = create_devices(num_devices, num_subnets)
 
