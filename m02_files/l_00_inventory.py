@@ -39,7 +39,7 @@ csv_inventory = [
 
 xml_inventory = {
     "inventory": {
-        "devices": [
+        "device": [
             {
                 "name": "devnet-csr-always-on-sandbox",
                 "ssh-info": {
@@ -55,8 +55,9 @@ xml_inventory = {
                 "name": "devnet-csr-always-on-sandbox",
                 "ssh-info": {
                     "hostname": "sbx-nxos-mgmt.cisco.com",
-                    "port": 8181,
+                    "port": "8181",
                     "credentials": {"username": "admin", "password": "Admin_1234!"},
+                    "device_type": "cisco_nxos",
                 },
             },
         ]
