@@ -1,0 +1,19 @@
+- name: devnet-csr-allways-on-sandbox
+  netconf-info:
+    port: 10000
+  restconf-info:
+    port: 9443
+  ssh-info:
+    credentials:
+      password: C1sco12345
+      username: developer
+    device_type: cisco_ios
+    hostname: ios-ce-mgmt-latest-cisco.com
+    port: 8181
+- name: devnet-csr-always-on-sandbox
+  ssh-info:
+    credentials:
+      password: Admin_1234!
+      username: admin
+    hostname: sbx-nxos-mgmt.cisco.com
+    port: 8181

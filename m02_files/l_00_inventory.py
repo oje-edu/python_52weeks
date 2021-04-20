@@ -1,10 +1,5 @@
 inventory = [
     {
-        "N ":  "--------------------------------------",
-        "OT": "# FILE GENERATED  BY l_00_inventory.py",
-        "E ":  "--------------------------------------",
-    },
-    {
         "name": "devnet-csr-allways-on-sandbox",
         "ssh-info": {
             "hostname": "ios-ce-mgmt-latest-cisco.com",
