@@ -1,6 +1,6 @@
 # HAS TO BE RUN AS SUPERUSER!
 # IN TERMINAL: sudo python3 scapy_example.py
-# NOTE: SOME TASKS MAY TAKE A LONG TIME!
+# NOTE: SOME TASKS (ICMP ping) MAY TAKE A LONG TIME!
 import scapy.all as scapy
 from scapy.layers.l2 import Ether, ARP
 from scapy.layers.inet import IP, ICMP, TCP
@@ -39,7 +39,7 @@ scapy.sniff(iface=interface, prn=lambda pkt: print(f"lambda    {pkt.summary()}")
 
 # DISCOVER HOSTS ON NETWORK USING MANUAL ARP PING
 print("\n\n----- Discovery hosts on network using manual ARP ping ---------")
-ans, unans = scapy.srp(Ether(dst="ff:ff:ff:ff:ff:ff")/ARP(pdst=subnet + "/24"), timeout=2)
+ans, unans = scapy.srp(Ether(dst="ff:ff:ff:ff:ff:ff")/ARP(pdst=subnet), timeout=2)
 ans.summary()
 
 # DISCOVER HOSTS ON NETWORK USING ARPING FUNCTION
