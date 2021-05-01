@@ -4,7 +4,7 @@
 
 ## some things to note:
 
-There are some **requirements** ( I update them ... until now (Lesson 5) you will need:
+There are some **requirements** ( I update them ... you will need:
 
 #### Debian based
 
