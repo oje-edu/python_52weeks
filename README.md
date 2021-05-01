@@ -4,16 +4,17 @@
 
 ## some things to note:
 
-There are some **requirements** ( I update them ... you will need:
+There are some **requirements**:
 
 #### Debian based
 
 ```bash
 sudo apt update && sudo apt dist-upgrade -y && \
-sudo apt install git python3 python3-venv python3-pip nmap -y
+sudo apt install git python3 python3-venv python3-pip nmap -y && \
+sudo reboot
 ```
 
-### Download & venv
+### Download & venv (Unix-based)
 
 ```bash
 git clone https://github.com/oje-edu/52weeks.git 
@@ -22,4 +23,3 @@ python3 -m venv venv
 . venv/bin/activate
 pip install -r requirements.txt
 ```
-
