@@ -1,6 +1,7 @@
 from random import choice
 import string
 
+
 def create_device(device_index, subnet_index):
 
     device = dict()
@@ -75,6 +76,7 @@ def create_network(num_devices=1, num_subnets=1):
             }
             interfaces.append(interface)
     return network
+
 
 def create_devices_gen(num_devices=1, num_subnets=1):
 
