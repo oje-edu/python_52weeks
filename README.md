@@ -1,4 +1,6 @@
-# I started to learn
+![GitHub last commit](https://img.shields.io/github/last-commit/oje-edu/python_52weeks) ![GitHub repo size](https://img.shields.io/github/repo-size/oje-edu/python_52weeks)
+
+# I started to learn (on hold)
 
 [52 weeks](https://my.thisisit.io/p/52-weeks-of-python) of python - a free course from and with [@chuckablack](https://twitter.com/chuckablack)
 
@@ -17,7 +19,7 @@ sudo reboot
 ### Download & venv (Unix-based)
 
 ```bash
-git clone https://github.com/oje-edu/52weeks.git 
+git clone https://github.com/oje-edu/python_52weeks.git
 cd 52weeks
 python3 -m venv venv
 . venv/bin/activate
